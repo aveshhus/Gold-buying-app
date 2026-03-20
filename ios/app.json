@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Gold Silver App iOS",
+    "slug": "gold-silver-app-ios",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#681412"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.goldapp.ios",
+      "buildNumber": "1.0.0"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [],
+    "scheme": "goldappios"
+  }
+}
+
+
+
+
+
+
+
+
+
+

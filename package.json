@@ -1,0 +1,14 @@
+{
+  "name": "goldapp",
+  "version": "1.0.0",
+  "description": "Gold App - Main project",
+  "private": true,
+  "scripts": {
+    "start": "cd mobile && npm start",
+    "start:mobile": "cd mobile && npm start",
+    "start:ios": "cd ios && npm start",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start"
+  }
+}
+

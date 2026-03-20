@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Gold Silver App",
+    "slug": "gold-silver-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#681412"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.goldapp.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#681412"
+      },
+      "package": "com.goldapp.mobile"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ],
+    "scheme": "goldapp",
+    "extra": {
+      "eas": {
+        "projectId": "ab4c2810-ce27-405a-82f1-97effd0d1ff2"
+      }
+    }
+  }
+}
