@@ -1,0 +1,50 @@
+[
+  {
+    "id": "admin001",
+    "name": "Admin",
+    "email": "admin@goldapp.com",
+    "password": "$2a$10$tTiId7dFnJ8Oa9CzKwETben2/Dujd.79u2flMgO7tL6nTaIsYx/BS",
+    "role": "admin",
+    "phone": "+1234567890",
+    "createdAt": "2025-11-06T08:42:21.058Z"
+  },
+  {
+    "id": "mhn6ijsci4beipql7d",
+    "name": "vinay jain",
+    "email": "Shresthsolution2@gmail.com",
+    "password": "$2a$10$l25FRtCYoikxGxRb3sX2ruAhDfP00XNeDO/mab4DC0xIWJ4Lhu2Km",
+    "phone": "07733053629",
+    "role": "user",
+    "createdAt": "2025-11-06T08:42:55.020Z"
+  },
+  {
+    "id": "mhnbpnrpyyx3edtztv9",
+    "name": "vinay jain",
+    "email": "test@test.com",
+    "password": "$2a$10$M6HCkAO003tYDItIXzDjJu1zP/bu8Ob54zZ8pQOm4Oa/F2/xDr0yi",
+    "phone": "07733053629",
+    "role": "user",
+    "createdAt": "2025-11-06T11:08:24.853Z"
+  },
+  {
+    "id": "mhnbquw4e24foxyah5s",
+    "name": "data",
+    "email": "data@test.com",
+    "password": "$2a$10$i22dPXRxJ52bDGJVJWwHZeYhSCptP44GYtpW4hS8Xq/vl.oC8fu1m",
+    "phone": "7733053629",
+    "role": "user",
+    "createdAt": "2025-11-06T11:09:20.740Z"
+  },
+  {
+    "id": "mhvxen88me43g0ibzae",
+    "name": "new",
+    "email": "new@new.com",
+    "password": "$2a$10$b19wOhxfFv0FPhF2Qd8.6eNEOK709s8MteOQRkZuYhE.kW1g7LVuW",
+    "phone": "7733053629",
+    "pan": "BJYPH1111D",
+    "aadhaar": "556846654965",
+    "kycVerified": false,
+    "role": "user",
+    "createdAt": "2025-11-12T11:37:51.896Z"
+  }
+]

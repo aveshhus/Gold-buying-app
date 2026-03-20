@@ -1,0 +1,54 @@
+[
+  {
+    "id": "mhn6iytw0j5xgnn4674e",
+    "purchaseId": "mhn6iytvqoqeot2orx",
+    "userId": "mhn6ijsci4beipql7d",
+    "amount": 12742,
+    "status": "completed",
+    "createdAt": "2025-11-06T08:43:14.516Z",
+    "updatedAt": "2025-11-06T08:43:41.505Z"
+  },
+  {
+    "id": "mhnav80ycgvxmx59cgp",
+    "purchaseId": "mhnav80x7pljohzygro",
+    "userId": "mhn6ijsci4beipql7d",
+    "amount": 1505.6,
+    "status": "completed",
+    "createdAt": "2025-11-06T10:44:44.770Z",
+    "updatedAt": "2025-11-06T10:45:59.786Z"
+  },
+  {
+    "id": "mhnaz8960ufsjejg64q",
+    "purchaseId": "mhnaz895e4cfo5e0q2",
+    "userId": "mhn6ijsci4beipql7d",
+    "amount": 127420,
+    "status": "pending",
+    "createdAt": "2025-11-06T10:47:51.690Z"
+  },
+  {
+    "id": "mhnbs3l090lglwl3rmm",
+    "purchaseId": "mhnbs3kjjroxpx2sgch",
+    "userId": "mhnbquw4e24foxyah5s",
+    "amount": 15056,
+    "status": "completed",
+    "createdAt": "2025-11-06T11:10:18.660Z",
+    "updatedAt": "2025-11-06T11:10:38.081Z"
+  },
+  {
+    "id": "mhoi3zdnk8jsklvt78",
+    "purchaseId": "mhoi3zdkhcl2ah9w1",
+    "userId": "mhnbquw4e24foxyah5s",
+    "amount": 1269104.064119297,
+    "status": "pending",
+    "createdAt": "2025-11-07T06:55:16.955Z"
+  },
+  {
+    "id": "mhstjeuhvgo8zf4xw3d",
+    "purchaseId": "mhstjeugyty2wf4j5kj",
+    "userId": "mhnbquw4e24foxyah5s",
+    "amount": 127610.2247307016,
+    "status": "completed",
+    "createdAt": "2025-11-10T07:26:17.321Z",
+    "updatedAt": "2025-11-10T07:26:58.238Z"
+  }
+]
