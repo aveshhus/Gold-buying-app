@@ -1,0 +1,273 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Marquee Animation for Tagline */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Professional Mobile Optimizations */
+@layer base {
+  /* Touch-friendly buttons and interactive elements */
+  button,
+  a,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"] {
+    @apply touch-manipulation;
+    -webkit-tap-highlight-color: rgba(104, 20, 18, 0.1);
+  }
+  
+  /* Prevent text selection on mobile for better UX */
+  button,
+  [role="button"] {
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
+  
+  /* Smooth scrolling on mobile */
+  html {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  
+  /* Better table scrolling on mobile */
+  .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  
+  /* Better vertical scrolling on mobile */
+  .overflow-y-auto {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  
+  /* Improve form inputs on mobile */
+  input,
+  textarea,
+  select {
+    font-size: 16px; /* Prevents zoom on iOS */
+    -webkit-appearance: none;
+    border-radius: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    input,
+    textarea,
+    select {
+      font-size: inherit;
+    }
+  }
+  
+  /* Professional mobile card shadows */
+  @media (max-width: 768px) {
+    .mobile-card-shadow {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 
+                  0 1px 3px rgba(0, 0, 0, 0.12);
+    }
+    
+    .mobile-card-shadow-lg {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), 
+                  0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  /* Professional mobile spacing */
+  @media (max-width: 768px) {
+    .mobile-safe-area {
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+    }
+    
+    .mobile-bottom-safe {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+  }
+}
+
+/* 
+ * Grance Font Configuration
+ * 
+ * INSTRUCTIONS TO ADD GRANCE FONT:
+ * 1. Download the Grance font files (.otf, .ttf, .woff2, or .woff) from:
+ *    - MyFonts: https://www.myfonts.com/collections/grance-font-salamahtype
+ *    - Creative Market: https://creativemarket.com/Salamahtype/7804338-GRANCE-Modern-Serif
+ *    - Creative Fabrica: https://www.creativefabrica.com/product/grance/
+ *    - Or Dafont for personal use: https://www.dafont.com/grance.font
+ * 
+ * 2. Place the font files in: frontend/public/fonts/
+ *    Common filenames: Grance-Regular.otf, Grance-Regular.ttf, Grance-Regular.woff2
+ * 
+ * 3. Uncomment and update the @font-face declarations below with your actual filenames
+ * 
+ * 4. The font will automatically be applied across the entire project
+ */
+
+/* Uncomment these when you have the Grance font files: */
+/*
+@font-face {
+  font-family: 'Grance';
+  src: url('/fonts/Grance-Regular.woff2') format('woff2'),
+       url('/fonts/Grance-Regular.woff') format('woff'),
+       url('/fonts/Grance-Regular.otf') format('opentype'),
+       url('/fonts/Grance-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Grance';
+  src: url('/fonts/Grance-Medium.woff2') format('woff2'),
+       url('/fonts/Grance-Medium.woff') format('woff'),
+       url('/fonts/Grance-Medium.otf') format('opentype'),
+       url('/fonts/Grance-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Grance';
+  src: url('/fonts/Grance-SemiBold.woff2') format('woff2'),
+       url('/fonts/Grance-SemiBold.woff') format('woff'),
+       url('/fonts/Grance-SemiBold.otf') format('opentype'),
+       url('/fonts/Grance-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Grance';
+  src: url('/fonts/Grance-Bold.woff2') format('woff2'),
+       url('/fonts/Grance-Bold.woff') format('woff'),
+       url('/fonts/Grance-Bold.otf') format('opentype'),
+       url('/fonts/Grance-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+@layer base {
+  :root {
+    /* Shree Omji Saraf Brand Colors - Exact Hex Values */
+    --brand-maroon: #681412;      /* Deep Maroon - Primary */
+    --brand-khaki: #92422B;       /* Pinkish Khaki - Secondary */
+    --brand-beige: #E79A66;       /* Light Beige - Accent */
+    --brand-light-beige: #D5BAA7; /* Light Pinkish Beige - Backgrounds */
+    
+    --background: 25 35% 75%; /* Light Beige #D5BAA7 - Exact brand color */
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 0 70% 22%; /* Brand Maroon #681412 */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 12 52% 35%; /* Brand Khaki #92422B */
+    --secondary-foreground: 0 0% 98%;
+    --muted: 24 38% 92%; /* Light beige background #D5BAA7 tint */
+    --muted-foreground: 0 0% 30%;
+    --accent: 24 68% 66%; /* Brand Beige #E79A66 */
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 24 38% 85%; /* Light beige border */
+    --input: 24 38% 96%; /* Very light beige input */
+    --ring: 0 70% 22%; /* Brand Maroon */
+    --radius: 0.5rem;
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-grance;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Apply Grance font to all text elements */
+  h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select, label, li, td, th {
+    font-family: 'Grance', var(--font-grance), Georgia, serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-muted;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/50;
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Focus visible styles */
+:focus-visible {
+  @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+}
+
+/* Hide scrollbar utility */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
+}
+
+/* React Easy Crop Styles */
+.reactEasyCrop_Container {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: #000 !important;
+}
+
+.reactEasyCrop_Image {
+  max-width: none !important;
+  max-height: none !important;
+  display: block !important;
+}
+
+.reactEasyCrop_CropArea {
+  border: 2px solid rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 0 0 9999em rgba(0, 0, 0, 0.5) !important;
+}
+
+.reactEasyCrop_CropAreaGrid::before,
+.reactEasyCrop_CropAreaGrid::after {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
